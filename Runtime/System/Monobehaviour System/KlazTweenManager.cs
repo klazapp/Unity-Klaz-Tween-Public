@@ -58,9 +58,9 @@ namespace com.Klazapp.Utility
         {
             tweenId = 0;
 
-#if KLAZAPP_ENABLE_JOBSYSTEM
+// #if KLAZAPP_ENABLE_JOBSYSTEM
 
-#endif
+// #endif
         }
         
         private void OnDestroy()
@@ -70,20 +70,21 @@ namespace com.Klazapp.Utility
         
         private void Update()
         {
-#if KLAZAPP_ENABLE_JOBSYSTEM
-            var totalTweenCount = GetTotalTweenCount();
-            //if(totalTweenCount >= 10)
-            if (useJobSystem)
-            {
-                UpdateJobTweens();
-            }
-            else
-            {
-                UpdateRegularTweens();
-            }
-#else
+// #if KLAZAPP_ENABLE_JOBSYSTEM
+//             var totalTweenCount = GetTotalTweenCount();
+//             //if(totalTweenCount >= 10)
+//             if (useJobSystem)
+//             {
+//                 UpdateJobTweens();
+//             }
+//             else
+//             {
+//                 UpdateRegularTweens();
+//             }
+// #else
+//             UpdateRegularTweens();
+// #endif
             UpdateRegularTweens();
-#endif
 
             ProcessCompletedTweens();
         }
