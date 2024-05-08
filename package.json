@@ -10,6 +10,10 @@
     "data"
   ],
   "category": "Utility",
+  "dependencies": {
+    "com.unity.mathematics": "1.2.6",
+    "com.klazapp.easing": "1.0.0",
+  },
     "author": {
       "name": "Klazapp",
       "email": "klazapp@klazapp.com",
