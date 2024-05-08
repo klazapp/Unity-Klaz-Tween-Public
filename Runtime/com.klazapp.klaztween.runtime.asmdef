@@ -3,6 +3,7 @@
     "rootNamespace": "",
     "references": [
         "com.klazapp.easing.runtime",
+        "Unity.Mathematics"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
