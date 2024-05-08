@@ -4,7 +4,7 @@
     "references": [
         "com.klazapp.easing.runtime",
         "com.klazapp.singleton.runtime",
-        "com.klazapp.mathematics.runtime",
+        "com.klazapp.mathematicsextension.runtime",
         "Unity.Mathematics"
     ],
     "includePlatforms": [],
