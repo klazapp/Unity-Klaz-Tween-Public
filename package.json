@@ -15,11 +15,12 @@
     "com.klazapp.easing": "1.0.0",
   },
     "author": {
-      "name": "Klazapp",
-      "email": "klazapp@klazapp.com",
-      "url": "https://www.klazapp.com"
-    },
-    "documentationUrl": "https://github.com/klazapp/Unity-Klaz-Tween-Public",
-    "changelogUrl": "https://github.com/klazapp/Unity-Klaz-Tween-Public",
-    "licensesUrl": "https://github.com/klazapp/Unity-Klaz-Tween-Public"
+    "name": "Klazapp",
+    "email": "klazapp@klazapp.com",
+    "url": "https://www.klazapp.com"
+  },
+    "documentationUrl": "https://github.com/klazapp/Unity-Hierarchy-Public",
+    "changelogUrl": "https://github.com/klazapp/Unity-Hierarchy-Public",
+    "licensesUrl": "https://github.com/klazapp/Unity-Hierarchy-Public"
 }
+
