@@ -1,34 +1,59 @@
-# Tween Utility for Unity
+# KlazTween - Unity Tweening Library
 
-## Introduction
-The `Tween` utility, part of the `com.Klazapp.Utility` namespace, refers to a technique used in animation and game development to create smooth transitions or animations between different states or values over time. The term "Tween" is short for "in-betweening," which involves generating intermediate frames or values between keyframes to create fluid motion or transitions.
+KlazTween is a robust tweening library designed for Unity, offering high-performance animations utilizing Unity's Job System and Burst Compiler for optimized execution. It supports various data types including scalar, vector, and quaternion interpolations, enabling smooth transitions and animations in game development.
 
 ## Features
-- Tweens allow for smooth transitions between different states or values, such as position, scale, rotation, alpha, and color.
-- Tweens are often used to animate UI elements, providing visual feedback and enhancing user experience in applications and games.
-- Tweens are commonly used to create animation effects, such as fading in/out, sliding, scaling, and rotating objects.
-- 
-## Dependencies
-To use `Tween`, certain dependencies are required. Ensure these are included in your Unity project.
-- **Unity Version**: Minimum Unity 2020.3 LTS.
 
-## Compatibility
-| Compatibility        | URP | BRP | HDRP |
-|----------------------|-----|-----|------|
-| Compatible           | ✔️  | ✔️  | ✔️   |
+- **Versatile Tweening**: Support for floats, vectors, quaternions, and colors.
+- **Job System Integration**: Leverages Unity's Job System for high-performance computations, ideal for heavy tweening scenarios.
+- **Ease Functions**: Includes multiple easing functions to create dynamic and natural motion.
+- **Burst Compilation**: Ready for Unity's Burst compiler to enhance performance.
+- **Delay and Callbacks**: Supports initial delays and start/end callbacks for robust animation scripting.
+
+## Dependencies
+
+- Unity 2020.3 LTS or newer.
+- Unity Mathematics Library.
+- Unity Collections Library.
+- Unity Jobs System (optional, for enhanced performance).
 
 ## Installation
-1. Open the Unity Package Manager (`Window` > `Package Manager`).
-2. Click `+`, select `Add package from git URL...`, and enter `https://github.com/klazapp/Unity-Klaz-Tween-Public.git`.
-3. Unity will download and make the package available in your project.
+
+1. Clone or download the repository.
+2. Import the package into your Unity project.
+3. Ensure all dependencies are resolved via Unity's Package Manager.
 
 ## Usage
+
+To create a tween, use the `KlazTweenManager`:
+
 ```csharp
-Write Something here
+KlazTweenManager.Instance.DoTween(startValue, endValue, duration, onUpdateAction, delay, easeType, onStartCallback, onCompleteCallback);
 ```
 
-## To-Do List (Future Features)
-- 
+### Parameters:
+
+- **startValue** & **endValue**: The start and end values of the tween.
+- **duration**: Duration of the tween in seconds.
+- **onUpdateAction**: Action to perform on value update.
+- **delay** (optional): Initial delay before the tween starts.
+- **easeType** (optional): Type of easing function to apply.
+- **onStartCallback** & **onCompleteCallback** (optional): Callbacks for start and completion of the tween.
+
+## Customization
+
+Modify the `KlazTweenManager` to add or adjust the tween types and behaviors as needed. You can also extend the easing functions by modifying the `Easing` class.
+
+## Known Issues
+
+- Job System integration is complex and should be tested extensively in different build environments.
+
+## To-Do List
+
+- Improve the integration with Unity's new DOTs architecture.
+- Expand the library to include more complex animations such as path following.
+- Optimize memory management for large-scale animations.
 
 ## License
-This utility is released under the [MIT License](LICENSE).
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
